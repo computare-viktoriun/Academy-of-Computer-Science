@@ -1,0 +1,16 @@
+##Questão 01: Criar um código de forma que ele calcule um aumento de X% para o salário de R$ X,00
+def main():
+    
+    ##Entrada de Dados
+    salario = float(input("Digite o valor do seu salário: \n"))
+    porcentagem = float(input("Digite um valor para o aumento percentual: \n"))
+
+    ##Processamento
+    aumento = salario * (porcentagem/100)
+    salario_com_aumento = salario + aumento
+
+    ##Saida de Dados:
+    print("Você teve um aumento de {}% no seu salário atual R${}.\nAgora seu novo salário é R${:.2f}".format(porcentagem,salario,salario_com_aumento))
+
+if __name__ == "__main__":
+    main()
