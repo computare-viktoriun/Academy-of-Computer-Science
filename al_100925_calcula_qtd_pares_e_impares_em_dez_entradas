@@ -1,0 +1,16 @@
+### Faça um programa que peça 10 números interiros,
+# calcule e mostre a quantidade de números pare
+# e a quantidade de números ímpares.
+
+qtd_pares = 0
+qtd_impares = 0
+
+for i in range(1,11):
+    entrada = int(input(f" Digite um valor para o {i}° número:"))
+    if(entrada % 2 == 0):
+        qtd_pares+=1
+        print("É par")
+    elif(entrada % 2  == 1):
+        qtd_impares+=1
+        print("É impar")
+print(f"Números Pares: {qtd_pares}\nNúmeros Impares: {qtd_impares}")
