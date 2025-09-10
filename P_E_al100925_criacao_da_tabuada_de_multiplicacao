@@ -1,0 +1,11 @@
+###Faça um programa que por meio do laço de repetição FOR
+#  exiba as tabuadas de 1 até 10 no formato '2 x 3 = 6'
+
+i = []
+j = []
+mult = 0
+for i in range(0,11):
+    for j in range(0,11):
+        mult = i*j
+        print(f"{i} x {j} = {mult}")
+
