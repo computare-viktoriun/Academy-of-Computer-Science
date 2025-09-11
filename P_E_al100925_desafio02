@@ -1,0 +1,3 @@
+###Partindo de uma lista de palavras qualquer,
+# como: palavras = ['Python','Java','Assemble','web']
+#Crie um código que seja capaz de encontrar e exibir a maior e menor palavra da lista(em número de caracteres).
