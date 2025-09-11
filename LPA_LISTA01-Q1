@@ -1,0 +1,20 @@
+//Leia uma velocidade em m/s, calcule e escreva esta velocidade
+em km/h. (Vkm/h = Vm/s * 3.6)
+
+programa: CALCULA-VELOCIDADE-MS-PARA-KMH
+
+
+VAR: 
+    velocidade_ms,velocidade_km = real
+
+início:
+    //Entrada
+    escreval("Digite um valor em m/a para a velocidade inicial: ")    
+    leia(velocidade_ms)
+    
+    //Processamento
+    velocidade_km <- velocidade_ms * 3.6
+
+    //Saída 
+    escreval(velocidade_ms, "equivale a ", velocidade_km)
+FimAlgoritmo
