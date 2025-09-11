@@ -1,0 +1,21 @@
+//2. Leia um valor em horas e um valor em minutos,
+// calcule e escreva o equivalente em minutos.
+
+ALGORITMO: CALCULA_EQUIVALENCIA_ENTRE_HORAS_PARA_MINUTOS
+
+VAR:
+    entrada_horas, minutos_totais: inteiro
+início:
+
+    //Entrada de Dados:
+    escreval("")
+    leia(entrada_horas)
+    //Processamento
+    minutos_totais <- entrada_horas * 60
+    //Saída
+    escreval(entrada_horas," horas, equivale à: ", minitos_totais, " minutos")
+
+fimalgoritmo
+
+
+    
