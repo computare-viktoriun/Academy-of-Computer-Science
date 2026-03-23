@@ -5,19 +5,12 @@
 
 /**
  *
- * @author flavio.victor
+ * @author Aluno
  */
-/*
-Q1. Crie a classe Conta com os getters e setters necessários da sua classe e os métodos
-sca, deposita, calculaRendimento e getDadosConta. Adicione o modificador de
-visibilidade (private, se necessário) para cada atributo(titular, numero, agencia e
-saldo) e método da classe Conta. Crie uma classe TestaConta nela crie uma
-referência a um objeto do tipo Conta no método main e tente modificar ou ler um
-de seus atributos privados. O que acontece?
-*/
 public class TestaConta {
 
     public static void main(String[] args) {
+        System.out.println("\nQUESTAO 01");
         Conta flavio_conta = new Conta();
         flavio_conta.setTitular("flavio");
         System.out.println(flavio_conta.getTitular());
@@ -37,7 +30,8 @@ public class TestaConta {
         System.out.println() para cada mudança e teste que fizer com os seus funcionários,
         você simplesmente fará:
         
-        */
+         */
+        System.out.println("\nQUESTAO 02");
         System.out.println(flavio_conta.getDadosConta());
         /*
         Q3. Na classe de teste dentro do bloco main, construa duas contas com o new e
@@ -45,7 +39,8 @@ public class TestaConta {
         precisará criar outra referência:
         
         Em ambos os casos, temos false como resposta. Porque?
-        */
+         */
+        System.out.println("\nQUESTAO 03");
         Conta c1 = new Conta();
         c1.titular = "Danilo";
         c1.setSaldo(100.0);
@@ -57,6 +52,13 @@ public class TestaConta {
         } else {
             System.out.println("diferentes");
         }
+        
+        /*
+        Retorna False, porque ambas fazem referência a espaços de memórias diferentes.
+        */
+        
+        
+        
         /*
         Q4. Agora crie duas referências à mesma conta e compare-as com o ==. Tire suas
         conclusões. Para criar duas referências à mesma conta adicione o comando abaixo
@@ -67,6 +69,7 @@ public class TestaConta {
         O que acontece com o if do exercício anterior? Verifique: mude o titular da c1 para
         “Minerva” e imprima c2.titular.
         */
+        System.out.println("\nQUESTAO 04");
         Conta c3 = new Conta();
         c3.titular = "Minerva";
         c3.setSaldo(100.0);
@@ -81,23 +84,34 @@ public class TestaConta {
         }
         System.out.println(c4.getTitular());
         
+        /*
+         O if passa a retornar true, pois a instância do objeto conta c3 passa a
+        apontar para o objeto em memória de c4.
+        */
+
+        
         
         /*
         Q5. 
         */
-        
+        System.out.println("\nQUESTAO 05");
         Conta c5 = new Conta();
         c5.setTitular("Minerva");
         c5.setAgencia("1234");
         c5.setNumero(223);
         c5.setSaldo(50);
         c5.deposita(100);
+        
+        c5.dataDeAbertura = new Data();
+        c5.dataDeAbertura.preencheData(1, 7, 2009);
+        
         System.out.println(c5.getDadosConta());
         
-        /*
-        Q6. Modifique seu método getDadosConta para que ele devolva o valor da
-        dataDeAbertura daquela Conta:
-        */
+        //Q7.
+        System.out.println("\nQUESTAO 07");
+        Conta c6 = new Conta();
+        System.out.println(c6.getDadosConta());
+           
+        
     }
-
 }
